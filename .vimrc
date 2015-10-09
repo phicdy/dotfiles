@@ -34,6 +34,11 @@ set display=lastline
 set showmatch
 set matchtime=1
 
+set backspace=indent,eol,start
+
+" Yank to clipboard
+set clipboard+=unnamed
+
 " Not insert comment out automatically 
 autocmd FileType * set formatoptions-=ro
 
@@ -166,3 +171,4 @@ let g:indentLine_color_gui = '#708090'
 autocmd FileType * setlocal formatoptions-=ro
 
 set noswapfile
+
