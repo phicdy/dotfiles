@@ -1,6 +1,6 @@
 " Color Scheme
-colorscheme jellybeans
-"colorscheme hybrid
+"colorscheme jellybeans
+colorscheme hybrid
 
 " Set tab visible width
 set tabstop=4
@@ -72,6 +72,7 @@ NeoBundle 'scrooloose/syntastic.git'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'kana/vim-smartword'
 NeoBundle 'vim-scripts/taglist.vim'
+NeoBundle 'ctrlpvim/ctrlp.vim'
 
 " Color Scheme
 NeoBundle 'nanotech/jellybeans.vim'
@@ -172,3 +173,5 @@ autocmd FileType * setlocal formatoptions-=ro
 
 set noswapfile
 
+" CtrlP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
