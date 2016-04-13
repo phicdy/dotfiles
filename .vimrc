@@ -52,15 +52,21 @@ let Gtags_Auto_Update = 1
 
 "--------- For NeoBundle -----------
 
-" Disable filetype
-filetype off
-
-" Set neobundle at first
 if has('vim_starting')
-	set runtimepath+=~/.vim/bundle/neobundle.vim
-	" Path to install plugin
-	call neobundle#rc(expand('~/.vim/bundle/'))
-endif
+   if &compatible
+     set nocompatible               " Be iMproved
+   endif
+
+   " Required:
+   set runtimepath+=~/.vim/bundle/neobundle.vim/
+ endif
+
+ " Required:
+ call neobundle#begin(expand('~/.vim/bundle/'))
+
+ " Let NeoBundle manage NeoBundle
+ " Required:
+ NeoBundleFetch 'Shougo/neobundle.vim'
 
 " Set plungins to install
 NeoBundle 'Shougo/unite.vim'
@@ -85,9 +91,14 @@ NeoBundle 'vim-scripts/Wombat'
 NeoBundle 'tomasr/molokai'
 NeoBundle 'vim-scripts/rdark'
 
-filetype plugin on
-filetype indent on
+call neobundle#end()
 
+" Required:
+filetype plugin indent on
+
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
+NeoBundleCheck
 "------- For NeoBundle end --------
 
 "------- For neocomplcache --------
