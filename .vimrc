@@ -186,3 +186,7 @@ set noswapfile
 
 " CtrlP
 set runtimepath^=~/.vim/bundle/ctrlp.vim
+
+" Underline
+set cursorline
+highlight CursorLine cterm=underline ctermfg=NONE ctermbg=NONE
