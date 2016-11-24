@@ -4,6 +4,7 @@ curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.s
 
 if [ "$(uname)" = "Darwin" ]; then
 	brew install ctags
+    brew install reattach-to-user-namespace
 elif [ "$(expr substr $(uname -s) 1 5)" = "Linux" ]; then
 	sudo apt-get install exuberant-ctags
 elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
