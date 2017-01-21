@@ -1,6 +1,6 @@
 #!/bin/bash
 # Install Neobundle
-curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install_neo.sh & sh install_neo.sh & rm install_neo.sh
+curl https://raw.githubusercontent.com/Shougo/neobundle.vim/master/bin/install.sh > install_neo.sh && sh install_neo.sh && rm install_neo.sh
 
 if [ "$(uname)" = "Darwin" ]; then
 	brew install ctags
