@@ -8,6 +8,12 @@ set tabstop=4
 " Set insert tab width
 set shiftwidth=4
 
+augroup fileTypeIndent
+	autocmd!
+	autocmd BufNewFile,BufRead *.yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+	autocmd BufNewFile,BufRead *.yml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+augroup END
+
 " No vi compatible
 set nocompatible
 
