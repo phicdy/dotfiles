@@ -12,6 +12,7 @@ elif [ "$(expr substr $(uname -s) 1 10)" = "MINGW32_NT" ]; then
 fi
 
 # Copy dotfiles
+cp .tmux.conf ~/
 cp .vimrc ~/
 mkdir -p ~/.vim/
 cp -a .vim/colors ~/.vim/
