@@ -1,6 +1,6 @@
 #export JAVA_HOME=`/System/Library/Frameworks/JavaVM.framework/Versions/A/Commands/java_home -v "1.8"`
 export JAVA8_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-export JAVA_HOME=/Applications/Android\ Studio\ Preview.app/Contents/jre/Contents/Home
+export JAVA_HOME=/Applications/Android\ Studio\ Preview.app/Contents/jbr/Contents/Home
 PATH=${JAVA_HOME}/bin:${PATH}
   
 export ANDROID_HOME="$HOME/Library/Android/sdk/"
