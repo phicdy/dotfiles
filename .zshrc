@@ -16,8 +16,6 @@ export PATH=${PATH}:$HOME/Documents/github/flutter/bin
 alias gitcommitfilediff="python3 $HOME/Documents/github/GitScript/commit_file_diff.py"
 alias gitcheckout="python3 $HOME/Documents/github/GitScript/checkout.py"
 
-source /Library/Developer/CommandLineTools/usr/share/git-core/git-completion.zsh
-
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
